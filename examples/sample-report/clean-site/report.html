@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>SEO audit · 127.0.0.1:8767</title>
+<style>
+:root {
+  --bg: #f3efe6;
+  --paper: #fffdf8;
+  --ink: #1e1a16;
+  --muted: #6d645c;
+  --line: #e3d9cc;
+  --accent: #1f6f5b;
+  --critical: #9f1239;
+  --high: #c2410c;
+  --medium: #a16207;
+  --low: #3f6212;
+  --info: #44403c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+h1, h2, h3 { font-family: "Iowan Old Style", Palatino, Georgia, serif; font-weight: 600; }
+a { color: var(--accent); }
+.top, main, footer { width: min(1100px, calc(100% - 32px)); margin: 0 auto; }
+.top { padding: 32px 0 8px; }
+.brand { margin: 0; letter-spacing: 0.12em; text-transform: uppercase; font-size: 12px; color: var(--muted); }
+.brand span { color: var(--accent); }
+h1 { margin: 8px 0 0; font-size: 42px; line-height: 1.1; }
+.start, .when { margin: 6px 0; color: var(--muted); word-break: break-all; }
+.overview, .group, .method, .table-wrap {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.overview { display: grid; grid-template-columns: 220px 1fr; gap: 20px; padding: 20px; margin-top: 18px; }
+.score-card .eyebrow, .cat-label, th { font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+.score { font-family: "Iowan Old Style", Palatino, Georgia, serif; font-size: 72px; line-height: 0.9; margin: 8px 0; }
+.note { color: var(--muted); margin: 0; }
+.severities { display: flex; gap: 8px; flex-wrap: wrap; list-style: none; margin: 0; padding: 0; grid-column: 2; }
+.severities li { min-width: 88px; padding: 8px 10px; border-radius: 10px; background: #f7f3ec; }
+.severities strong { display: block; font-size: 22px; }
+.severities [data-severity="critical"] strong { color: var(--critical); }
+.severities [data-severity="high"] strong { color: var(--high); }
+.severities [data-severity="medium"] strong { color: var(--medium); }
+.severities [data-severity="low"] strong { color: var(--low); }
+.categories { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+.cat-label { display: flex; justify-content: space-between; }
+.track { height: 6px; background: #efe8dc; border-radius: 99px; overflow: hidden; }
+.fill { height: 100%; background: var(--accent); }
+.stats { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin: 0; }
+.stats div { border-top: 1px solid var(--line); padding-top: 8px; }
+.stats dt { color: var(--muted); font-size: 12px; }
+.stats dd { margin: 2px 0 0; font-weight: 600; }
+.filters { display: flex; gap: 8px; flex-wrap: wrap; margin: 18px 0; }
+.filters button {
+  border: 1px solid var(--line); background: var(--paper); border-radius: 999px;
+  padding: 6px 12px; text-transform: capitalize; cursor: pointer;
+}
+.filters button.on { background: var(--ink); color: white; border-color: var(--ink); }
+section h2 { margin: 28px 0 12px; }
+.group { padding: 16px 18px; margin: 0 0 12px; }
+.group header { display: flex; gap: 10px; align-items: baseline; }
+.group h3 { margin: 0; font-size: 22px; }
+.group p { margin: 8px 0; color: var(--muted); }
+.group ul { margin: 0; padding-left: 18px; }
+.group li { margin: 6px 0; }
+.group li span { display: block; color: var(--muted); }
+.pill { text-transform: uppercase; font-size: 11px; letter-spacing: 0.06em; border-radius: 999px; padding: 2px 8px; color: white; }
+.group[data-severity="critical"] .pill { background: var(--critical); }
+.group[data-severity="high"] .pill { background: var(--high); }
+.group[data-severity="medium"] .pill { background: var(--medium); }
+.group[data-severity="low"] .pill { background: var(--low); }
+.group[data-severity="info"] .pill { background: var(--info); }
+.count { margin-left: auto; color: var(--muted); }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { position: sticky; top: 0; background: #faf7f1; }
+.method { padding: 8px 18px 18px; margin: 18px 0 28px; }
+footer { color: var(--muted); padding-bottom: 40px; }
+@media (max-width: 800px) {
+  .overview, .categories, .stats { grid-template-columns: 1fr; }
+  .severities, .categories, .stats { grid-column: auto; }
+  h1 { font-size: 32px; }
+}
+@media print {
+  .filters { display: none; }
+  body { background: white; }
+  .group, .overview, .method, .table-wrap { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<header class="top">
+<p class="brand">seoaudit <span>0.1.0</span></p>
+<h1>127.0.0.1:8767</h1>
+<p class="start"><a href="http://127.0.0.1:8767/">http://127.0.0.1:8767/</a></p>
+<p class="when">2026-11-25T01:10:48+00:00 · 0.1s · 4 requests</p>
+</header>
+<main>
+<section class="overview"><div class="score-card"><p class="eyebrow">Health score</p><p class="score">100.0</p><p class="note">Triage score for this crawl. Category bars use the same weights on that group of checks.</p></div><ul class="severities"><li data-severity="critical"><span>critical</span><strong>0</strong></li><li data-severity="high"><span>high</span><strong>0</strong></li><li data-severity="medium"><span>medium</span><strong>0</strong></li><li data-severity="low"><span>low</span><strong>0</strong></li><li data-severity="info"><span>info</span><strong>0</strong></li></ul><div class="categories"><div class="cat"><div class="cat-label"><span>Crawl</span><span>100.0</span></div><div class="track"><div class="fill" style="width:100.0%"></div></div></div><div class="cat"><div class="cat-label"><span>Links</span><span>100.0</span></div><div class="track"><div class="fill" style="width:100.0%"></div></div></div><div class="cat"><div class="cat-label"><span>Indexation</span><span>100.0</span></div><div class="track"><div class="fill" style="width:100.0%"></div></div></div><div class="cat"><div class="cat-label"><span>Metadata</span><span>100.0</span></div><div class="track"><div class="fill" style="width:100.0%"></div></div></div><div class="cat"><div class="cat-label"><span>Content</span><span>100.0</span></div><div class="track"><div class="fill" style="width:100.0%"></div></div></div></div><dl class="stats"><div><dt>Pages fetched</dt><dd>1</dd></div><div><dt>Indexable documents</dt><dd>1</dd></div><div><dt>Sitemap URLs</dt><dd>1</dd></div><div><dt>Blocked by robots</dt><dd>0</dd></div><div><dt>External links</dt><dd>0 checked</dd></div><div><dt>Robots.txt</dt><dd>found</dd></div></dl></section>
+<div class="filters" role="toolbar" aria-label="Filter issues"><button type="button" data-filter="all" class="on">All</button><button type="button" data-filter="critical">critical</button><button type="button" data-filter="high">high</button><button type="button" data-filter="medium">medium</button><button type="button" data-filter="low">low</button><button type="button" data-filter="info">info</button></div>
+<section>
+<h2>Prioritized issues</h2>
+<p class="empty">No issues. Every check that ran came back clean.</p>
+</section>
+<section><h2>Pages</h2><div class="table-wrap"><table><thead><tr><th>URL</th><th>Status</th><th>Depth</th><th>Words</th><th>HTML</th><th>Indexable</th><th>Title</th></tr></thead><tbody><tr><td><a href="http://127.0.0.1:8767/">http://127.0.0.1:8767/</a></td><td>200</td><td>0</td><td>323</td><td>2.7 KB</td><td>yes</td><td>Field notes on home archive entry</td></tr></tbody></table></div></section>
+<section class="method"><h2>How the score is calculated</h2><p>points = weight x (min(count, 5) + 1) / 2. Weights: critical 15, high 8, medium 3, low 1, info 0. Info scores 0. The fifth finding of a code is the last one that adds points, so one template fault cannot deduct more than three times its weight. The overall score is 100 minus the sum, floored at 0.</p><p>Title 30-60 characters. Meta description 70-160 characters. Thin content is under 300 visible words; under 50 is very thin. HTML over 200 KB is large, and over 500 KB is very large. Click depth 4 or more is deep. The start document is depth 0.</p><h2>Limits of this crawl</h2><ul><li>HTML is fetched as the server sent it. JavaScript is not executed.</li><li>Visible word count includes navigation and excludes script, style, noscript, template, and svg.</li><li>Page weight is the HTML document size, not the weight of images, CSS, or scripts.</li><li>Image checks read src and data-src. Those image URLs are not downloaded.</li><li>Open Graph image URLs are not downloaded.</li><li>Sitemap URLs are requested even past --max-depth. Links found on them still obey the depth limit.</li><li>With concurrency above 1, --max-depth follows the path that discovered each URL. Reported depth is the shortest path among crawled pages.</li><li>Python&#x27;s robots parser only honors Crawl-delay values that are whole seconds.</li><li>A missing robots.txt is treated as no restrictions. A 4xx or 5xx robots.txt is also treated as no restrictions and is reported.</li><li>External links are checked up to --max-external. Links past that cap are counted and not requested.</li></ul></section>
+</main>
+<footer>
+<p>Generated by seoaudit 0.1.0. The score sorts this crawl. It is not a ranking prediction.</p>
+</footer>
+<script>
+document.querySelectorAll("[data-filter]").forEach(function (button) {
+  button.addEventListener("click", function () {
+    var filter = button.getAttribute("data-filter");
+    document.querySelectorAll("[data-filter]").forEach(function (other) {
+      other.classList.toggle("on", other === button);
+    });
+    document.querySelectorAll("article.group").forEach(function (group) {
+      group.hidden = filter !== "all" && group.getAttribute("data-severity") !== filter;
+    });
+  });
+});
+</script>
+</body>
+</html>

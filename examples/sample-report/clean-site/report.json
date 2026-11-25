@@ -1,0 +1,166 @@
+{
+  "tool": "seoaudit",
+  "version": "0.1.0",
+  "report_schema": 1,
+  "start_url": "http://127.0.0.1:8767/",
+  "started_at": "2026-11-25T01:10:48+00:00",
+  "finished_at": "2026-11-25T01:10:48+00:00",
+  "duration_seconds": 0.146,
+  "score": 100.0,
+  "score_by_category": {
+    "crawl": 100.0,
+    "links": 100.0,
+    "indexation": 100.0,
+    "metadata": 100.0,
+    "content": 100.0
+  },
+  "deductions": [],
+  "settings": {
+    "max_pages": 10,
+    "max_depth": 6,
+    "rate_limit": 200.0,
+    "concurrency": 4,
+    "timeout": 15.0,
+    "max_redirects": 10,
+    "user_agent": "SeoAuditBot/0.1 (+https://github.com/photosnob/seo-audit-cli)",
+    "check_external": true,
+    "max_external": 50,
+    "respect_robots": true,
+    "include_subdomains": false,
+    "max_body_bytes": 1000000,
+    "trust_env": false,
+    "thresholds": {
+      "title_min": 30,
+      "title_max": 60,
+      "meta_min": 70,
+      "meta_max": 160,
+      "thin_words": 300,
+      "very_thin_words": 50,
+      "html_large_bytes": 200000,
+      "html_very_large_bytes": 500000,
+      "deep_depth": 4
+    },
+    "crawl_delay": null,
+    "effective_request_interval": 0.005
+  },
+  "limitations": [
+    "HTML is fetched as the server sent it. JavaScript is not executed.",
+    "Visible word count includes navigation and excludes script, style, noscript, template, and svg.",
+    "Page weight is the HTML document size, not the weight of images, CSS, or scripts.",
+    "Image checks read src and data-src. Those image URLs are not downloaded.",
+    "Open Graph image URLs are not downloaded.",
+    "Sitemap URLs are requested even past --max-depth. Links found on them still obey the depth limit.",
+    "With concurrency above 1, --max-depth follows the path that discovered each URL. Reported depth is the shortest path among crawled pages.",
+    "Python's robots parser only honors Crawl-delay values that are whole seconds.",
+    "A missing robots.txt is treated as no restrictions. A 4xx or 5xx robots.txt is also treated as no restrictions and is reported.",
+    "External links are checked up to --max-external. Links past that cap are counted and not requested."
+  ],
+  "robots": {
+    "status": 200,
+    "found": true,
+    "unavailable": false,
+    "error": null,
+    "sitemaps": [
+      "http://127.0.0.1:8767/sitemap.xml"
+    ],
+    "crawl_delay": null,
+    "text": "User-agent: *\nDisallow:\n\nSitemap: http://127.0.0.1:8767/sitemap.xml\n"
+  },
+  "sitemap": {
+    "sources": [
+      "http://127.0.0.1:8767/sitemap.xml"
+    ],
+    "urls": [
+      "http://127.0.0.1:8767/"
+    ],
+    "errors": [],
+    "truncated": false
+  },
+  "summary": {
+    "pages": 1,
+    "documents": 1,
+    "indexable": 1,
+    "issues": 0,
+    "by_severity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0,
+      "info": 0
+    },
+    "by_code": {},
+    "external_checked": 0,
+    "external_considered": 0,
+    "blocked": 0,
+    "sitemap_urls": 1,
+    "requests": 4
+  },
+  "issues": [],
+  "pages": [
+    {
+      "url": "http://127.0.0.1:8767/",
+      "final_url": "http://127.0.0.1:8767/",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8767/",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 0,
+      "html_bytes": 2807,
+      "elapsed_ms": 43.9,
+      "title": "Field notes on home archive entry",
+      "meta_description": "Reference notes for the home page of the Northwind field archive. Seasonal context is included.",
+      "robots": null,
+      "h1s": [
+        "Notes on home"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8767/"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on home archive entry",
+        "og:description": "Reference notes for the home page of the Northwind field archive. Seasonal context is included.",
+        "og:image": "http://127.0.0.1:8767/og.png",
+        "og:url": "http://127.0.0.1:8767/"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8767/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "start",
+      "indexable": true
+    }
+  ],
+  "external_checks": [],
+  "external_considered": 0,
+  "blocked_urls": [],
+  "requests_made": 4
+}

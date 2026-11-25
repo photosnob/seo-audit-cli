@@ -1,0 +1,77 @@
+severity,code,url,message
+critical,http_server_error,http://127.0.0.1:8765/server-error,Final status 500.
+critical,redirect_loop,http://127.0.0.1:8765/loop-a,Redirect loop: http://127.0.0.1:8765/loop-a -> http://127.0.0.1:8765/loop-b -> http://127.0.0.1:8765/loop-a
+high,broken_internal_link,http://127.0.0.1:8765/,"Links to http://127.0.0.1:8765/limited, which returned 429."
+high,broken_internal_link,http://127.0.0.1:8765/,"Links to http://127.0.0.1:8765/missing-page, which returned 404."
+high,broken_internal_link,http://127.0.0.1:8765/,"Links to http://127.0.0.1:8765/server-error, which returned 500."
+high,canonical_multiple,http://127.0.0.1:8765/conflicting-canonical,"Canonical URLs disagree: http://127.0.0.1:8765/conflicting-canonical, http://127.0.0.1:8765/about."
+high,canonical_multiple,http://127.0.0.1:8765/header-canonical,"Canonical URLs disagree: http://127.0.0.1:8765/header-canonical, http://127.0.0.1:8765/about."
+high,canonical_target_error,http://127.0.0.1:8765/bad-canonical,Canonical http://127.0.0.1:8765/missing-page returned 404.
+high,h1_missing,http://127.0.0.1:8765/thin,This HTML document has no H1.
+high,hreflang_target_error,http://127.0.0.1:8765/hreflang,hreflang de target http://127.0.0.1:8765/de-missing returned 404.
+high,html_very_large,http://127.0.0.1:8765/heavy,"HTML document is 522859 bytes, above 500000."
+high,http_client_error,http://127.0.0.1:8765/de-missing,Final status 404.
+high,http_client_error,http://127.0.0.1:8765/missing-page,Final status 404.
+high,jsonld_invalid,http://127.0.0.1:8765/jsonld-bad,Invalid JSON (Expecting property name enclosed in double quotes)
+high,rate_limited,http://127.0.0.1:8765/limited,Server returned 429 Too Many Requests.
+high,redirect_chain,http://127.0.0.1:8765/redirect-long,3 redirects: http://127.0.0.1:8765/redirect-long -> http://127.0.0.1:8765/long/1 -> http://127.0.0.1:8765/long/2 -> http://127.0.0.1:8765/about
+high,sitemap_url_non_200,http://127.0.0.1:8765/missing-page,Sitemap URL finished as 404.
+high,title_missing,http://127.0.0.1:8765/thin,This HTML document has no <title>.
+high,too_many_redirects,http://127.0.0.1:8765/chain/0,Stopped after 10 redirects: http://127.0.0.1:8765/chain/0 -> http://127.0.0.1:8765/chain/1 -> http://127.0.0.1:8765/chain/2 -> http://127.0.0.1:8765/chain/3 -> http://127.0.0.1:8765/chain/4 -> http://127.0.0.1:8765/chain/5 -> http://127.0.0.1:8765/chain/6 -> http://127.0.0.1:8765/chain/7 -> http://127.0.0.1:8765/chain/8 -> http://127.0.0.1:8765/chain/9 -> http://127.0.0.1:8765/chain/10
+high,very_thin_content,http://127.0.0.1:8765/thin,Visible text is 3 words.
+medium,broken_external_link,http://127.0.0.1:8765/,"Links to http://127.0.0.1:8766/missing, which returned 404."
+medium,canonical_missing,http://127.0.0.1:8765/missing-canonical,No canonical link element or Link header.
+medium,canonical_missing,http://127.0.0.1:8765/thin,No canonical link element or Link header.
+medium,canonical_non_self,http://127.0.0.1:8765/bad-canonical,Canonical points to http://127.0.0.1:8765/missing-page.
+medium,h1_empty,http://127.0.0.1:8765/empty-h1,1 empty H1 element(s).
+medium,h1_multiple,http://127.0.0.1:8765/multi-h1,2 H1 elements: First heading; Second heading.
+medium,hreflang_invalid,http://127.0.0.1:8765/hreflang,"hreflang ""english"" is not a language tag or x-default."
+medium,hreflang_no_return,http://127.0.0.1:8765/hreflang,http://127.0.0.1:8765/fr (english) does not point back.
+medium,hreflang_no_return,http://127.0.0.1:8765/hreflang,http://127.0.0.1:8765/fr (fr) does not point back.
+medium,hreflang_no_return,http://127.0.0.1:8765/no-self-hreflang,http://127.0.0.1:8765/es (en) does not point back.
+medium,hreflang_no_return,http://127.0.0.1:8765/no-self-hreflang,http://127.0.0.1:8765/es (es) does not point back.
+medium,hreflang_not_absolute,http://127.0.0.1:8765/hreflang,hreflang en-us uses a relative href (/hreflang).
+medium,img_alt_missing,http://127.0.0.1:8765/images,Image has no alt attribute: http://127.0.0.1:8765/missing-alt.png
+medium,meta_description_duplicate,http://127.0.0.1:8765/dup-a,"Meta description ""Shared fixture description used by two pages so duplicate detection h…"" is also used on http://127.0.0.1:8765/dup-b."
+medium,meta_description_duplicate,http://127.0.0.1:8765/dup-b,"Meta description ""Shared fixture description used by two pages so duplicate detection h…"" is also used on http://127.0.0.1:8765/dup-a."
+medium,meta_description_missing,http://127.0.0.1:8765/thin,This HTML document has no meta description.
+medium,noindex,http://127.0.0.1:8765/noindex,"noindex is set (noindex, nofollow)."
+medium,noindex,http://127.0.0.1:8765/x-robots,noindex is set (noindex).
+medium,redirect_chain,http://127.0.0.1:8765/redirect-chain,2 redirects: http://127.0.0.1:8765/redirect-chain -> http://127.0.0.1:8765/mid -> http://127.0.0.1:8765/about
+medium,redirect_missing_location,http://127.0.0.1:8765/bad-redirect,A redirect response had no usable Location header.
+medium,redirect_offsite,http://127.0.0.1:8765/redirect-out,Redirects off site to http://127.0.0.1:8766/ok.
+medium,sitemap_url_noindex,http://127.0.0.1:8765/noindex,Sitemap URL is marked noindex.
+medium,thin_content,http://127.0.0.1:8765/about,Visible text is 63 words.
+medium,title_duplicate,http://127.0.0.1:8765/dup-a,"Title ""Shared fixture title for duplicate detection"" is also used on http://127.0.0.1:8765/dup-b."
+medium,title_duplicate,http://127.0.0.1:8765/dup-b,"Title ""Shared fixture title for duplicate detection"" is also used on http://127.0.0.1:8765/dup-a."
+low,deep_page,http://127.0.0.1:8765/guides/deep,Internal click depth is 4. The start URL is depth 0.
+low,hreflang_missing_self,http://127.0.0.1:8765/no-self-hreflang,"hreflang alternates are present, and none is this URL."
+low,jsonld_empty,http://127.0.0.1:8765/jsonld-empty,JSON-LD parsed but has no @type and no @graph.
+low,meta_description_too_long,http://127.0.0.1:8765/meta-long,Meta description is 171 characters. The usual range is 70-160.
+low,meta_description_too_short,http://127.0.0.1:8765/meta-short,Meta description is 10 characters. The usual range is 70-160.
+low,nofollow,http://127.0.0.1:8765/noindex,"nofollow is set (noindex, nofollow)."
+low,og_incomplete,http://127.0.0.1:8765/thin,"Missing og:title, og:description, og:image."
+low,orphan_page,http://127.0.0.1:8765/bad-canonical,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/conflicting-canonical,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/dup-a,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/dup-b,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/empty-h1,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/header-canonical,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/heavy,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/images,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/jsonld-bad,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/jsonld-empty,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/meta-long,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/meta-short,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/missing-canonical,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/multi-h1,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/no-self-hreflang,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/orphan,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/thin,Indexable page is not represented in the sitemap.
+low,orphan_page,http://127.0.0.1:8765/title-long,Indexable page is not represented in the sitemap.
+low,sitemap_url_redirect,http://127.0.0.1:8765/redirect,Sitemap URL redirects to http://127.0.0.1:8765/about.
+low,title_too_long,http://127.0.0.1:8765/title-long,"Title is 90 characters (""Seasonal archive of soil temperature rainfall yield and market prices…""). The usual range is 30-60."
+low,title_too_short,http://127.0.0.1:8765/,"Title is 5 characters (""Notes""). The usual range is 30-60."
+info,blocked_by_robots,http://127.0.0.1:8765/private/secret,Disallowed by robots.txt and not fetched. First seen from http://127.0.0.1:8765/.
+info,img_alt_empty,http://127.0.0.1:8765/images,Image has empty alt (fine when decorative): http://127.0.0.1:8765/decorative.png
+info,jsonld_missing,http://127.0.0.1:8765/thin,No JSON-LD block on this document.

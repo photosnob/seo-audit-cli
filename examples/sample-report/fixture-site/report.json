@@ -1,0 +1,3434 @@
+{
+  "tool": "seoaudit",
+  "version": "0.1.0",
+  "report_schema": 1,
+  "start_url": "http://127.0.0.1:8765/",
+  "started_at": "2026-11-25T01:10:47+00:00",
+  "finished_at": "2026-11-25T01:10:48+00:00",
+  "duration_seconds": 0.816,
+  "score": 0.0,
+  "score_by_category": {
+    "crawl": 25.0,
+    "links": 81.0,
+    "indexation": 29.5,
+    "metadata": 61.0,
+    "content": 68.0
+  },
+  "deductions": [
+    {
+      "code": "broken_internal_link",
+      "severity": "high",
+      "category": "links",
+      "count": 3,
+      "points": 16.0
+    },
+    {
+      "code": "http_server_error",
+      "severity": "critical",
+      "category": "crawl",
+      "count": 1,
+      "points": 15.0
+    },
+    {
+      "code": "redirect_loop",
+      "severity": "critical",
+      "category": "crawl",
+      "count": 1,
+      "points": 15.0
+    },
+    {
+      "code": "canonical_multiple",
+      "severity": "high",
+      "category": "indexation",
+      "count": 2,
+      "points": 12.0
+    },
+    {
+      "code": "http_client_error",
+      "severity": "high",
+      "category": "crawl",
+      "count": 2,
+      "points": 12.0
+    },
+    {
+      "code": "canonical_target_error",
+      "severity": "high",
+      "category": "indexation",
+      "count": 1,
+      "points": 8.0
+    },
+    {
+      "code": "h1_missing",
+      "severity": "high",
+      "category": "metadata",
+      "count": 1,
+      "points": 8.0
+    },
+    {
+      "code": "hreflang_target_error",
+      "severity": "high",
+      "category": "indexation",
+      "count": 1,
+      "points": 8.0
+    },
+    {
+      "code": "html_very_large",
+      "severity": "high",
+      "category": "content",
+      "count": 1,
+      "points": 8.0
+    },
+    {
+      "code": "jsonld_invalid",
+      "severity": "high",
+      "category": "content",
+      "count": 1,
+      "points": 8.0
+    },
+    {
+      "code": "rate_limited",
+      "severity": "high",
+      "category": "crawl",
+      "count": 1,
+      "points": 8.0
+    },
+    {
+      "code": "redirect_chain",
+      "severity": "high",
+      "category": "crawl",
+      "count": 1,
+      "points": 8.0
+    },
+    {
+      "code": "sitemap_url_non_200",
+      "severity": "high",
+      "category": "indexation",
+      "count": 1,
+      "points": 8.0
+    },
+    {
+      "code": "title_missing",
+      "severity": "high",
+      "category": "metadata",
+      "count": 1,
+      "points": 8.0
+    },
+    {
+      "code": "too_many_redirects",
+      "severity": "high",
+      "category": "crawl",
+      "count": 1,
+      "points": 8.0
+    },
+    {
+      "code": "very_thin_content",
+      "severity": "high",
+      "category": "content",
+      "count": 1,
+      "points": 8.0
+    },
+    {
+      "code": "hreflang_no_return",
+      "severity": "medium",
+      "category": "indexation",
+      "count": 4,
+      "points": 7.5
+    },
+    {
+      "code": "canonical_missing",
+      "severity": "medium",
+      "category": "indexation",
+      "count": 2,
+      "points": 4.5
+    },
+    {
+      "code": "meta_description_duplicate",
+      "severity": "medium",
+      "category": "metadata",
+      "count": 2,
+      "points": 4.5
+    },
+    {
+      "code": "noindex",
+      "severity": "medium",
+      "category": "indexation",
+      "count": 2,
+      "points": 4.5
+    },
+    {
+      "code": "title_duplicate",
+      "severity": "medium",
+      "category": "metadata",
+      "count": 2,
+      "points": 4.5
+    },
+    {
+      "code": "broken_external_link",
+      "severity": "medium",
+      "category": "links",
+      "count": 1,
+      "points": 3.0
+    },
+    {
+      "code": "canonical_non_self",
+      "severity": "medium",
+      "category": "indexation",
+      "count": 1,
+      "points": 3.0
+    },
+    {
+      "code": "h1_empty",
+      "severity": "medium",
+      "category": "metadata",
+      "count": 1,
+      "points": 3.0
+    },
+    {
+      "code": "h1_multiple",
+      "severity": "medium",
+      "category": "metadata",
+      "count": 1,
+      "points": 3.0
+    },
+    {
+      "code": "hreflang_invalid",
+      "severity": "medium",
+      "category": "indexation",
+      "count": 1,
+      "points": 3.0
+    },
+    {
+      "code": "hreflang_not_absolute",
+      "severity": "medium",
+      "category": "indexation",
+      "count": 1,
+      "points": 3.0
+    },
+    {
+      "code": "img_alt_missing",
+      "severity": "medium",
+      "category": "content",
+      "count": 1,
+      "points": 3.0
+    },
+    {
+      "code": "meta_description_missing",
+      "severity": "medium",
+      "category": "metadata",
+      "count": 1,
+      "points": 3.0
+    },
+    {
+      "code": "orphan_page",
+      "severity": "low",
+      "category": "indexation",
+      "count": 18,
+      "points": 3.0
+    },
+    {
+      "code": "redirect_chain",
+      "severity": "medium",
+      "category": "crawl",
+      "count": 1,
+      "points": 3.0
+    },
+    {
+      "code": "redirect_missing_location",
+      "severity": "medium",
+      "category": "crawl",
+      "count": 1,
+      "points": 3.0
+    },
+    {
+      "code": "redirect_offsite",
+      "severity": "medium",
+      "category": "crawl",
+      "count": 1,
+      "points": 3.0
+    },
+    {
+      "code": "sitemap_url_noindex",
+      "severity": "medium",
+      "category": "indexation",
+      "count": 1,
+      "points": 3.0
+    },
+    {
+      "code": "thin_content",
+      "severity": "medium",
+      "category": "content",
+      "count": 1,
+      "points": 3.0
+    },
+    {
+      "code": "deep_page",
+      "severity": "low",
+      "category": "content",
+      "count": 1,
+      "points": 1.0
+    },
+    {
+      "code": "hreflang_missing_self",
+      "severity": "low",
+      "category": "indexation",
+      "count": 1,
+      "points": 1.0
+    },
+    {
+      "code": "jsonld_empty",
+      "severity": "low",
+      "category": "content",
+      "count": 1,
+      "points": 1.0
+    },
+    {
+      "code": "meta_description_too_long",
+      "severity": "low",
+      "category": "metadata",
+      "count": 1,
+      "points": 1.0
+    },
+    {
+      "code": "meta_description_too_short",
+      "severity": "low",
+      "category": "metadata",
+      "count": 1,
+      "points": 1.0
+    },
+    {
+      "code": "nofollow",
+      "severity": "low",
+      "category": "indexation",
+      "count": 1,
+      "points": 1.0
+    },
+    {
+      "code": "og_incomplete",
+      "severity": "low",
+      "category": "metadata",
+      "count": 1,
+      "points": 1.0
+    },
+    {
+      "code": "sitemap_url_redirect",
+      "severity": "low",
+      "category": "indexation",
+      "count": 1,
+      "points": 1.0
+    },
+    {
+      "code": "title_too_long",
+      "severity": "low",
+      "category": "metadata",
+      "count": 1,
+      "points": 1.0
+    },
+    {
+      "code": "title_too_short",
+      "severity": "low",
+      "category": "metadata",
+      "count": 1,
+      "points": 1.0
+    }
+  ],
+  "settings": {
+    "max_pages": 200,
+    "max_depth": 6,
+    "rate_limit": 200.0,
+    "concurrency": 4,
+    "timeout": 15.0,
+    "max_redirects": 10,
+    "user_agent": "SeoAuditBot/0.1 (+https://github.com/photosnob/seo-audit-cli)",
+    "check_external": true,
+    "max_external": 50,
+    "respect_robots": true,
+    "include_subdomains": false,
+    "max_body_bytes": 1000000,
+    "trust_env": false,
+    "thresholds": {
+      "title_min": 30,
+      "title_max": 60,
+      "meta_min": 70,
+      "meta_max": 160,
+      "thin_words": 300,
+      "very_thin_words": 50,
+      "html_large_bytes": 200000,
+      "html_very_large_bytes": 500000,
+      "deep_depth": 4
+    },
+    "crawl_delay": null,
+    "effective_request_interval": 0.005
+  },
+  "limitations": [
+    "HTML is fetched as the server sent it. JavaScript is not executed.",
+    "Visible word count includes navigation and excludes script, style, noscript, template, and svg.",
+    "Page weight is the HTML document size, not the weight of images, CSS, or scripts.",
+    "Image checks read src and data-src. Those image URLs are not downloaded.",
+    "Open Graph image URLs are not downloaded.",
+    "Sitemap URLs are requested even past --max-depth. Links found on them still obey the depth limit.",
+    "With concurrency above 1, --max-depth follows the path that discovered each URL. Reported depth is the shortest path among crawled pages.",
+    "Python's robots parser only honors Crawl-delay values that are whole seconds.",
+    "A missing robots.txt is treated as no restrictions. A 4xx or 5xx robots.txt is also treated as no restrictions and is reported.",
+    "External links are checked up to --max-external. Links past that cap are counted and not requested."
+  ],
+  "robots": {
+    "status": 200,
+    "found": true,
+    "unavailable": false,
+    "error": null,
+    "sitemaps": [
+      "http://127.0.0.1:8765/sitemap.xml"
+    ],
+    "crawl_delay": null,
+    "text": "User-agent: *\nDisallow: /private\n\nSitemap: http://127.0.0.1:8765/sitemap.xml\n"
+  },
+  "sitemap": {
+    "sources": [
+      "http://127.0.0.1:8765/sitemap.xml",
+      "http://127.0.0.1:8765/sitemaps/pages.xml"
+    ],
+    "urls": [
+      "http://127.0.0.1:8765/",
+      "http://127.0.0.1:8765/about",
+      "http://127.0.0.1:8765/sitemap-only",
+      "http://127.0.0.1:8765/guides",
+      "http://127.0.0.1:8765/guides/start",
+      "http://127.0.0.1:8765/guides/mid",
+      "http://127.0.0.1:8765/guides/deep",
+      "http://127.0.0.1:8765/noindex",
+      "http://127.0.0.1:8765/hreflang",
+      "http://127.0.0.1:8765/es",
+      "http://127.0.0.1:8765/fr",
+      "http://127.0.0.1:8765/missing-page",
+      "http://127.0.0.1:8765/redirect",
+      "http://127.0.0.1:8765/private/secret"
+    ],
+    "errors": [],
+    "truncated": false
+  },
+  "summary": {
+    "pages": 41,
+    "documents": 30,
+    "indexable": 28,
+    "issues": 76,
+    "by_severity": {
+      "critical": 2,
+      "high": 18,
+      "medium": 25,
+      "low": 28,
+      "info": 3
+    },
+    "by_code": {
+      "http_server_error": 1,
+      "redirect_loop": 1,
+      "broken_internal_link": 3,
+      "canonical_multiple": 2,
+      "canonical_target_error": 1,
+      "h1_missing": 1,
+      "hreflang_target_error": 1,
+      "html_very_large": 1,
+      "http_client_error": 2,
+      "jsonld_invalid": 1,
+      "rate_limited": 1,
+      "redirect_chain": 2,
+      "sitemap_url_non_200": 1,
+      "title_missing": 1,
+      "too_many_redirects": 1,
+      "very_thin_content": 1,
+      "broken_external_link": 1,
+      "canonical_missing": 2,
+      "canonical_non_self": 1,
+      "h1_empty": 1,
+      "h1_multiple": 1,
+      "hreflang_invalid": 1,
+      "hreflang_no_return": 4,
+      "hreflang_not_absolute": 1,
+      "img_alt_missing": 1,
+      "meta_description_duplicate": 2,
+      "meta_description_missing": 1,
+      "noindex": 2,
+      "redirect_missing_location": 1,
+      "redirect_offsite": 1,
+      "sitemap_url_noindex": 1,
+      "thin_content": 1,
+      "title_duplicate": 2,
+      "deep_page": 1,
+      "hreflang_missing_self": 1,
+      "jsonld_empty": 1,
+      "meta_description_too_long": 1,
+      "meta_description_too_short": 1,
+      "nofollow": 1,
+      "og_incomplete": 1,
+      "orphan_page": 18,
+      "sitemap_url_redirect": 1,
+      "title_too_long": 1,
+      "title_too_short": 1,
+      "blocked_by_robots": 1,
+      "img_alt_empty": 1,
+      "jsonld_missing": 1
+    },
+    "external_checked": 2,
+    "external_considered": 2,
+    "blocked": 1,
+    "sitemap_urls": 14,
+    "requests": 61
+  },
+  "issues": [
+    {
+      "severity": "critical",
+      "code": "http_server_error",
+      "url": "http://127.0.0.1:8765/server-error",
+      "message": "Final status 500."
+    },
+    {
+      "severity": "critical",
+      "code": "redirect_loop",
+      "url": "http://127.0.0.1:8765/loop-a",
+      "message": "Redirect loop: http://127.0.0.1:8765/loop-a -> http://127.0.0.1:8765/loop-b -> http://127.0.0.1:8765/loop-a"
+    },
+    {
+      "severity": "high",
+      "code": "broken_internal_link",
+      "url": "http://127.0.0.1:8765/",
+      "message": "Links to http://127.0.0.1:8765/limited, which returned 429."
+    },
+    {
+      "severity": "high",
+      "code": "broken_internal_link",
+      "url": "http://127.0.0.1:8765/",
+      "message": "Links to http://127.0.0.1:8765/missing-page, which returned 404."
+    },
+    {
+      "severity": "high",
+      "code": "broken_internal_link",
+      "url": "http://127.0.0.1:8765/",
+      "message": "Links to http://127.0.0.1:8765/server-error, which returned 500."
+    },
+    {
+      "severity": "high",
+      "code": "canonical_multiple",
+      "url": "http://127.0.0.1:8765/conflicting-canonical",
+      "message": "Canonical URLs disagree: http://127.0.0.1:8765/conflicting-canonical, http://127.0.0.1:8765/about."
+    },
+    {
+      "severity": "high",
+      "code": "canonical_multiple",
+      "url": "http://127.0.0.1:8765/header-canonical",
+      "message": "Canonical URLs disagree: http://127.0.0.1:8765/header-canonical, http://127.0.0.1:8765/about."
+    },
+    {
+      "severity": "high",
+      "code": "canonical_target_error",
+      "url": "http://127.0.0.1:8765/bad-canonical",
+      "message": "Canonical http://127.0.0.1:8765/missing-page returned 404."
+    },
+    {
+      "severity": "high",
+      "code": "h1_missing",
+      "url": "http://127.0.0.1:8765/thin",
+      "message": "This HTML document has no H1."
+    },
+    {
+      "severity": "high",
+      "code": "hreflang_target_error",
+      "url": "http://127.0.0.1:8765/hreflang",
+      "message": "hreflang de target http://127.0.0.1:8765/de-missing returned 404."
+    },
+    {
+      "severity": "high",
+      "code": "html_very_large",
+      "url": "http://127.0.0.1:8765/heavy",
+      "message": "HTML document is 522859 bytes, above 500000."
+    },
+    {
+      "severity": "high",
+      "code": "http_client_error",
+      "url": "http://127.0.0.1:8765/de-missing",
+      "message": "Final status 404."
+    },
+    {
+      "severity": "high",
+      "code": "http_client_error",
+      "url": "http://127.0.0.1:8765/missing-page",
+      "message": "Final status 404."
+    },
+    {
+      "severity": "high",
+      "code": "jsonld_invalid",
+      "url": "http://127.0.0.1:8765/jsonld-bad",
+      "message": "Invalid JSON (Expecting property name enclosed in double quotes)"
+    },
+    {
+      "severity": "high",
+      "code": "rate_limited",
+      "url": "http://127.0.0.1:8765/limited",
+      "message": "Server returned 429 Too Many Requests."
+    },
+    {
+      "severity": "high",
+      "code": "redirect_chain",
+      "url": "http://127.0.0.1:8765/redirect-long",
+      "message": "3 redirects: http://127.0.0.1:8765/redirect-long -> http://127.0.0.1:8765/long/1 -> http://127.0.0.1:8765/long/2 -> http://127.0.0.1:8765/about"
+    },
+    {
+      "severity": "high",
+      "code": "sitemap_url_non_200",
+      "url": "http://127.0.0.1:8765/missing-page",
+      "message": "Sitemap URL finished as 404."
+    },
+    {
+      "severity": "high",
+      "code": "title_missing",
+      "url": "http://127.0.0.1:8765/thin",
+      "message": "This HTML document has no <title>."
+    },
+    {
+      "severity": "high",
+      "code": "too_many_redirects",
+      "url": "http://127.0.0.1:8765/chain/0",
+      "message": "Stopped after 10 redirects: http://127.0.0.1:8765/chain/0 -> http://127.0.0.1:8765/chain/1 -> http://127.0.0.1:8765/chain/2 -> http://127.0.0.1:8765/chain/3 -> http://127.0.0.1:8765/chain/4 -> http://127.0.0.1:8765/chain/5 -> http://127.0.0.1:8765/chain/6 -> http://127.0.0.1:8765/chain/7 -> http://127.0.0.1:8765/chain/8 -> http://127.0.0.1:8765/chain/9 -> http://127.0.0.1:8765/chain/10"
+    },
+    {
+      "severity": "high",
+      "code": "very_thin_content",
+      "url": "http://127.0.0.1:8765/thin",
+      "message": "Visible text is 3 words."
+    },
+    {
+      "severity": "medium",
+      "code": "broken_external_link",
+      "url": "http://127.0.0.1:8765/",
+      "message": "Links to http://127.0.0.1:8766/missing, which returned 404."
+    },
+    {
+      "severity": "medium",
+      "code": "canonical_missing",
+      "url": "http://127.0.0.1:8765/missing-canonical",
+      "message": "No canonical link element or Link header."
+    },
+    {
+      "severity": "medium",
+      "code": "canonical_missing",
+      "url": "http://127.0.0.1:8765/thin",
+      "message": "No canonical link element or Link header."
+    },
+    {
+      "severity": "medium",
+      "code": "canonical_non_self",
+      "url": "http://127.0.0.1:8765/bad-canonical",
+      "message": "Canonical points to http://127.0.0.1:8765/missing-page."
+    },
+    {
+      "severity": "medium",
+      "code": "h1_empty",
+      "url": "http://127.0.0.1:8765/empty-h1",
+      "message": "1 empty H1 element(s)."
+    },
+    {
+      "severity": "medium",
+      "code": "h1_multiple",
+      "url": "http://127.0.0.1:8765/multi-h1",
+      "message": "2 H1 elements: First heading; Second heading."
+    },
+    {
+      "severity": "medium",
+      "code": "hreflang_invalid",
+      "url": "http://127.0.0.1:8765/hreflang",
+      "message": "hreflang \"english\" is not a language tag or x-default."
+    },
+    {
+      "severity": "medium",
+      "code": "hreflang_no_return",
+      "url": "http://127.0.0.1:8765/hreflang",
+      "message": "http://127.0.0.1:8765/fr (english) does not point back."
+    },
+    {
+      "severity": "medium",
+      "code": "hreflang_no_return",
+      "url": "http://127.0.0.1:8765/hreflang",
+      "message": "http://127.0.0.1:8765/fr (fr) does not point back."
+    },
+    {
+      "severity": "medium",
+      "code": "hreflang_no_return",
+      "url": "http://127.0.0.1:8765/no-self-hreflang",
+      "message": "http://127.0.0.1:8765/es (en) does not point back."
+    },
+    {
+      "severity": "medium",
+      "code": "hreflang_no_return",
+      "url": "http://127.0.0.1:8765/no-self-hreflang",
+      "message": "http://127.0.0.1:8765/es (es) does not point back."
+    },
+    {
+      "severity": "medium",
+      "code": "hreflang_not_absolute",
+      "url": "http://127.0.0.1:8765/hreflang",
+      "message": "hreflang en-us uses a relative href (/hreflang)."
+    },
+    {
+      "severity": "medium",
+      "code": "img_alt_missing",
+      "url": "http://127.0.0.1:8765/images",
+      "message": "Image has no alt attribute: http://127.0.0.1:8765/missing-alt.png"
+    },
+    {
+      "severity": "medium",
+      "code": "meta_description_duplicate",
+      "url": "http://127.0.0.1:8765/dup-a",
+      "message": "Meta description \"Shared fixture description used by two pages so duplicate detection h…\" is also used on http://127.0.0.1:8765/dup-b."
+    },
+    {
+      "severity": "medium",
+      "code": "meta_description_duplicate",
+      "url": "http://127.0.0.1:8765/dup-b",
+      "message": "Meta description \"Shared fixture description used by two pages so duplicate detection h…\" is also used on http://127.0.0.1:8765/dup-a."
+    },
+    {
+      "severity": "medium",
+      "code": "meta_description_missing",
+      "url": "http://127.0.0.1:8765/thin",
+      "message": "This HTML document has no meta description."
+    },
+    {
+      "severity": "medium",
+      "code": "noindex",
+      "url": "http://127.0.0.1:8765/noindex",
+      "message": "noindex is set (noindex, nofollow)."
+    },
+    {
+      "severity": "medium",
+      "code": "noindex",
+      "url": "http://127.0.0.1:8765/x-robots",
+      "message": "noindex is set (noindex)."
+    },
+    {
+      "severity": "medium",
+      "code": "redirect_chain",
+      "url": "http://127.0.0.1:8765/redirect-chain",
+      "message": "2 redirects: http://127.0.0.1:8765/redirect-chain -> http://127.0.0.1:8765/mid -> http://127.0.0.1:8765/about"
+    },
+    {
+      "severity": "medium",
+      "code": "redirect_missing_location",
+      "url": "http://127.0.0.1:8765/bad-redirect",
+      "message": "A redirect response had no usable Location header."
+    },
+    {
+      "severity": "medium",
+      "code": "redirect_offsite",
+      "url": "http://127.0.0.1:8765/redirect-out",
+      "message": "Redirects off site to http://127.0.0.1:8766/ok."
+    },
+    {
+      "severity": "medium",
+      "code": "sitemap_url_noindex",
+      "url": "http://127.0.0.1:8765/noindex",
+      "message": "Sitemap URL is marked noindex."
+    },
+    {
+      "severity": "medium",
+      "code": "thin_content",
+      "url": "http://127.0.0.1:8765/about",
+      "message": "Visible text is 63 words."
+    },
+    {
+      "severity": "medium",
+      "code": "title_duplicate",
+      "url": "http://127.0.0.1:8765/dup-a",
+      "message": "Title \"Shared fixture title for duplicate detection\" is also used on http://127.0.0.1:8765/dup-b."
+    },
+    {
+      "severity": "medium",
+      "code": "title_duplicate",
+      "url": "http://127.0.0.1:8765/dup-b",
+      "message": "Title \"Shared fixture title for duplicate detection\" is also used on http://127.0.0.1:8765/dup-a."
+    },
+    {
+      "severity": "low",
+      "code": "deep_page",
+      "url": "http://127.0.0.1:8765/guides/deep",
+      "message": "Internal click depth is 4. The start URL is depth 0."
+    },
+    {
+      "severity": "low",
+      "code": "hreflang_missing_self",
+      "url": "http://127.0.0.1:8765/no-self-hreflang",
+      "message": "hreflang alternates are present, and none is this URL."
+    },
+    {
+      "severity": "low",
+      "code": "jsonld_empty",
+      "url": "http://127.0.0.1:8765/jsonld-empty",
+      "message": "JSON-LD parsed but has no @type and no @graph."
+    },
+    {
+      "severity": "low",
+      "code": "meta_description_too_long",
+      "url": "http://127.0.0.1:8765/meta-long",
+      "message": "Meta description is 171 characters. The usual range is 70-160."
+    },
+    {
+      "severity": "low",
+      "code": "meta_description_too_short",
+      "url": "http://127.0.0.1:8765/meta-short",
+      "message": "Meta description is 10 characters. The usual range is 70-160."
+    },
+    {
+      "severity": "low",
+      "code": "nofollow",
+      "url": "http://127.0.0.1:8765/noindex",
+      "message": "nofollow is set (noindex, nofollow)."
+    },
+    {
+      "severity": "low",
+      "code": "og_incomplete",
+      "url": "http://127.0.0.1:8765/thin",
+      "message": "Missing og:title, og:description, og:image."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/bad-canonical",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/conflicting-canonical",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/dup-a",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/dup-b",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/empty-h1",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/header-canonical",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/heavy",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/images",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/jsonld-bad",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/jsonld-empty",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/meta-long",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/meta-short",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/missing-canonical",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/multi-h1",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/no-self-hreflang",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/orphan",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/thin",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "orphan_page",
+      "url": "http://127.0.0.1:8765/title-long",
+      "message": "Indexable page is not represented in the sitemap."
+    },
+    {
+      "severity": "low",
+      "code": "sitemap_url_redirect",
+      "url": "http://127.0.0.1:8765/redirect",
+      "message": "Sitemap URL redirects to http://127.0.0.1:8765/about."
+    },
+    {
+      "severity": "low",
+      "code": "title_too_long",
+      "url": "http://127.0.0.1:8765/title-long",
+      "message": "Title is 90 characters (\"Seasonal archive of soil temperature rainfall yield and market prices…\"). The usual range is 30-60."
+    },
+    {
+      "severity": "low",
+      "code": "title_too_short",
+      "url": "http://127.0.0.1:8765/",
+      "message": "Title is 5 characters (\"Notes\"). The usual range is 30-60."
+    },
+    {
+      "severity": "info",
+      "code": "blocked_by_robots",
+      "url": "http://127.0.0.1:8765/private/secret",
+      "message": "Disallowed by robots.txt and not fetched. First seen from http://127.0.0.1:8765/."
+    },
+    {
+      "severity": "info",
+      "code": "img_alt_empty",
+      "url": "http://127.0.0.1:8765/images",
+      "message": "Image has empty alt (fine when decorative): http://127.0.0.1:8765/decorative.png"
+    },
+    {
+      "severity": "info",
+      "code": "jsonld_missing",
+      "url": "http://127.0.0.1:8765/thin",
+      "message": "No JSON-LD block on this document."
+    }
+  ],
+  "pages": [
+    {
+      "url": "http://127.0.0.1:8765/",
+      "final_url": "http://127.0.0.1:8765/",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 0,
+      "html_bytes": 4446,
+      "elapsed_ms": 43.5,
+      "title": "Notes",
+      "meta_description": "Reference notes for the home page of the Northwind field archive. Seasonal context is included.",
+      "robots": null,
+      "h1s": [
+        "Northwind field notes"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebSite"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Notes",
+        "og:description": "Reference notes for the home page of the Northwind field archive. Seasonal context is included.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 359,
+      "internal_links": [
+        "http://127.0.0.1:8765/about",
+        "http://127.0.0.1:8765/thin",
+        "http://127.0.0.1:8765/orphan",
+        "http://127.0.0.1:8765/dup-a",
+        "http://127.0.0.1:8765/dup-b",
+        "http://127.0.0.1:8765/title-long",
+        "http://127.0.0.1:8765/meta-short",
+        "http://127.0.0.1:8765/meta-long",
+        "http://127.0.0.1:8765/missing-canonical",
+        "http://127.0.0.1:8765/bad-canonical",
+        "http://127.0.0.1:8765/conflicting-canonical",
+        "http://127.0.0.1:8765/header-canonical",
+        "http://127.0.0.1:8765/noindex",
+        "http://127.0.0.1:8765/x-robots",
+        "http://127.0.0.1:8765/hreflang",
+        "http://127.0.0.1:8765/no-self-hreflang",
+        "http://127.0.0.1:8765/images",
+        "http://127.0.0.1:8765/jsonld-bad",
+        "http://127.0.0.1:8765/jsonld-empty",
+        "http://127.0.0.1:8765/heavy",
+        "http://127.0.0.1:8765/multi-h1",
+        "http://127.0.0.1:8765/empty-h1",
+        "http://127.0.0.1:8765/redirect",
+        "http://127.0.0.1:8765/redirect-chain",
+        "http://127.0.0.1:8765/redirect-long",
+        "http://127.0.0.1:8765/loop-a",
+        "http://127.0.0.1:8765/chain/0",
+        "http://127.0.0.1:8765/bad-redirect",
+        "http://127.0.0.1:8765/redirect-out",
+        "http://127.0.0.1:8765/missing-page",
+        "http://127.0.0.1:8765/server-error",
+        "http://127.0.0.1:8765/limited",
+        "http://127.0.0.1:8765/guides",
+        "http://127.0.0.1:8765/private/secret"
+      ],
+      "external_links": [
+        "http://127.0.0.1:8766/ok",
+        "http://127.0.0.1:8766/missing"
+      ],
+      "truncated": false,
+      "source": "start",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/about",
+      "final_url": "http://127.0.0.1:8765/about",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/about",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 1267,
+      "elapsed_ms": 49.2,
+      "title": "Field notes on about archive entry",
+      "meta_description": "Reference notes for the about page of the Northwind field archive. Seasonal context is included.",
+      "robots": null,
+      "h1s": [
+        "Notes on about"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/about"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on about archive entry",
+        "og:description": "Reference notes for the about page of the Northwind field archive. Seasonal context is included.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/about"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 63,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/bad-canonical",
+      "final_url": "http://127.0.0.1:8765/bad-canonical",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/bad-canonical",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2821,
+      "elapsed_ms": 43.5,
+      "title": "Field notes on bad-canonical archive",
+      "meta_description": "Reference notes for the bad-canonical page of the Northwind field archive.",
+      "robots": null,
+      "h1s": [
+        "Notes on bad-canonical"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/missing-page"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on bad-canonical archive",
+        "og:description": "Reference notes for the bad-canonical page of the Northwind field archive.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/bad-canonical"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/conflicting-canonical",
+      "final_url": "http://127.0.0.1:8765/conflicting-canonical",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/conflicting-canonical",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2824,
+      "elapsed_ms": 43.7,
+      "title": "Field notes on conflicting canonical",
+      "meta_description": "Reference notes for the conflicting canonical page of the Northwind field archive.",
+      "robots": null,
+      "h1s": [
+        "Two canonicals"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/conflicting-canonical",
+        "http://127.0.0.1:8765/about"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on conflicting canonical",
+        "og:description": "Reference notes for the conflicting canonical page of the Northwind field archive.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/conflicting-canonical"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 322,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/dup-a",
+      "final_url": "http://127.0.0.1:8765/dup-a",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/dup-a",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2866,
+      "elapsed_ms": 2.4,
+      "title": "Shared fixture title for duplicate detection",
+      "meta_description": "Shared fixture description used by two pages so duplicate detection has a stable pair to find today.",
+      "robots": null,
+      "h1s": [
+        "Notes on dup-a"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/dup-a"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Shared fixture title for duplicate detection",
+        "og:description": "Shared fixture description used by two pages so duplicate detection has a stable pair to find today.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/dup-a"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/dup-b",
+      "final_url": "http://127.0.0.1:8765/dup-b",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/dup-b",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2866,
+      "elapsed_ms": 42.3,
+      "title": "Shared fixture title for duplicate detection",
+      "meta_description": "Shared fixture description used by two pages so duplicate detection has a stable pair to find today.",
+      "robots": null,
+      "h1s": [
+        "Notes on dup-b"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/dup-b"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Shared fixture title for duplicate detection",
+        "og:description": "Shared fixture description used by two pages so duplicate detection has a stable pair to find today.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/dup-b"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/empty-h1",
+      "final_url": "http://127.0.0.1:8765/empty-h1",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/empty-h1",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2753,
+      "elapsed_ms": 45.3,
+      "title": "Field notes on empty h1 archive",
+      "meta_description": "Reference notes for the empty h1 page of the Northwind field archive. Seasonal context is included.",
+      "robots": null,
+      "h1s": [],
+      "h1_empty": 1,
+      "canonicals": [
+        "http://127.0.0.1:8765/empty-h1"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on empty h1 archive",
+        "og:description": "Reference notes for the empty h1 page of the Northwind field archive. Seasonal context is included.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/empty-h1"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 320,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/guides",
+      "final_url": "http://127.0.0.1:8765/guides",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/guides",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2876,
+      "elapsed_ms": 45.1,
+      "title": "Field notes on guides archive entry",
+      "meta_description": "Reference notes for the guides page of the Northwind field archive. Seasonal context is included.",
+      "robots": null,
+      "h1s": [
+        "Notes on guides"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/guides"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on guides archive entry",
+        "og:description": "Reference notes for the guides page of the Northwind field archive. Seasonal context is included.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/guides"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 324,
+      "internal_links": [
+        "http://127.0.0.1:8765/guides/start"
+      ],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/header-canonical",
+      "final_url": "http://127.0.0.1:8765/header-canonical",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/header-canonical",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2825,
+      "elapsed_ms": 42.9,
+      "title": "Field notes on header-canonical",
+      "meta_description": "Reference notes for the header-canonical page of the Northwind field archive.",
+      "robots": null,
+      "h1s": [
+        "Notes on header-canonical"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/header-canonical",
+        "http://127.0.0.1:8765/about"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on header-canonical",
+        "og:description": "Reference notes for the header-canonical page of the Northwind field archive.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/header-canonical"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/heavy",
+      "final_url": "http://127.0.0.1:8765/heavy",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/heavy",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 522859,
+      "elapsed_ms": 21.9,
+      "title": "Field notes on heavy archive entry",
+      "meta_description": "Reference notes for the heavy page of the Northwind field archive. Seasonal context is included.",
+      "robots": null,
+      "h1s": [
+        "Notes on heavy"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/heavy"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on heavy archive entry",
+        "og:description": "Reference notes for the heavy page of the Northwind field archive. Seasonal context is included.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/heavy"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 85923,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/hreflang",
+      "final_url": "http://127.0.0.1:8765/hreflang",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/hreflang",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 3252,
+      "elapsed_ms": 46.9,
+      "title": "Field notes on hreflang archive",
+      "meta_description": "Reference notes for the hreflang page of the Northwind field archive. Seasonal context is included.",
+      "robots": null,
+      "h1s": [
+        "Notes on hreflang"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/hreflang"
+      ],
+      "hreflang": [
+        {
+          "lang": "en",
+          "raw_href": "http://127.0.0.1:8765/hreflang",
+          "url": "http://127.0.0.1:8765/hreflang",
+          "is_absolute": true
+        },
+        {
+          "lang": "en-us",
+          "raw_href": "/hreflang",
+          "url": "http://127.0.0.1:8765/hreflang",
+          "is_absolute": false
+        },
+        {
+          "lang": "es",
+          "raw_href": "http://127.0.0.1:8765/es",
+          "url": "http://127.0.0.1:8765/es",
+          "is_absolute": true
+        },
+        {
+          "lang": "fr",
+          "raw_href": "http://127.0.0.1:8765/fr",
+          "url": "http://127.0.0.1:8765/fr",
+          "is_absolute": true
+        },
+        {
+          "lang": "english",
+          "raw_href": "http://127.0.0.1:8765/fr",
+          "url": "http://127.0.0.1:8765/fr",
+          "is_absolute": true
+        },
+        {
+          "lang": "de",
+          "raw_href": "http://127.0.0.1:8765/de-missing",
+          "url": "http://127.0.0.1:8765/de-missing",
+          "is_absolute": true
+        }
+      ],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on hreflang archive",
+        "og:description": "Reference notes for the hreflang page of the Northwind field archive. Seasonal context is included.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/hreflang"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/images",
+      "final_url": "http://127.0.0.1:8765/images",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/images",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2853,
+      "elapsed_ms": 53.9,
+      "title": "Field notes on images archive entry",
+      "meta_description": "Reference notes for the images page of the Northwind field archive. Seasonal context is included.",
+      "robots": null,
+      "h1s": [
+        "Notes on images"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/images"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on images archive entry",
+        "og:description": "Reference notes for the images page of the Northwind field archive. Seasonal context is included.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/images"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/missing-alt.png",
+          "alt": null
+        },
+        {
+          "src": "http://127.0.0.1:8765/decorative.png",
+          "alt": ""
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/jsonld-bad",
+      "final_url": "http://127.0.0.1:8765/jsonld-bad",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/jsonld-bad",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2665,
+      "elapsed_ms": 50.1,
+      "title": "Field notes on jsonld bad archive",
+      "meta_description": "Reference notes for the jsonld bad page of the Northwind field archive.",
+      "robots": null,
+      "h1s": [
+        "Broken structured data"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/jsonld-bad"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": false,
+          "error": "Invalid JSON (Expecting property name enclosed in double quotes)",
+          "types": [],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on jsonld bad archive",
+        "og:description": "Reference notes for the jsonld bad page of the Northwind field archive.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/jsonld-bad"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/jsonld-empty",
+      "final_url": "http://127.0.0.1:8765/jsonld-empty",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/jsonld-empty",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2669,
+      "elapsed_ms": 62.6,
+      "title": "Field notes on jsonld empty archive",
+      "meta_description": "Reference notes for the jsonld empty page of the Northwind field archive.",
+      "robots": null,
+      "h1s": [
+        "Empty structured data"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/jsonld-empty"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [],
+          "empty": true
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on jsonld empty archive",
+        "og:description": "Reference notes for the jsonld empty page of the Northwind field archive.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/jsonld-empty"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/meta-long",
+      "final_url": "http://127.0.0.1:8765/meta-long",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/meta-long",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2988,
+      "elapsed_ms": 43.3,
+      "title": "Field notes on meta-long archive",
+      "meta_description": "This description is deliberately long enough to exceed the usual search snippet. It keeps going so the audit can flag a meta description that will be truncated in results.",
+      "robots": null,
+      "h1s": [
+        "Notes on meta-long"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/meta-long"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on meta-long archive",
+        "og:description": "This description is deliberately long enough to exceed the usual search snippet. It keeps going so the audit can flag a meta description that will be truncated in results.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/meta-long"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/meta-short",
+      "final_url": "http://127.0.0.1:8765/meta-short",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/meta-short",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2673,
+      "elapsed_ms": 47.7,
+      "title": "Field notes on meta-short archive",
+      "meta_description": "Too short.",
+      "robots": null,
+      "h1s": [
+        "Notes on meta-short"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/meta-short"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on meta-short archive",
+        "og:description": "Too short.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/meta-short"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/missing-canonical",
+      "final_url": "http://127.0.0.1:8765/missing-canonical",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/missing-canonical",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2765,
+      "elapsed_ms": 47.3,
+      "title": "Field notes on missing-canonical",
+      "meta_description": "Reference notes for the missing-canonical page of the Northwind field archive.",
+      "robots": null,
+      "h1s": [
+        "Notes on missing-canonical"
+      ],
+      "h1_empty": 0,
+      "canonicals": [],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on missing-canonical",
+        "og:description": "Reference notes for the missing-canonical page of the Northwind field archive.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/missing-canonical"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/multi-h1",
+      "final_url": "http://127.0.0.1:8765/multi-h1",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/multi-h1",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2789,
+      "elapsed_ms": 48.8,
+      "title": "Field notes on multi h1 archive",
+      "meta_description": "Reference notes for the multi h1 page of the Northwind field archive. Seasonal context is included.",
+      "robots": null,
+      "h1s": [
+        "First heading",
+        "Second heading"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/multi-h1"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on multi h1 archive",
+        "og:description": "Reference notes for the multi h1 page of the Northwind field archive. Seasonal context is included.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/multi-h1"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 324,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/no-self-hreflang",
+      "final_url": "http://127.0.0.1:8765/no-self-hreflang",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/no-self-hreflang",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2961,
+      "elapsed_ms": 47.5,
+      "title": "Field notes on no-self-hreflang",
+      "meta_description": "Reference notes for the no-self-hreflang page of the Northwind field archive.",
+      "robots": null,
+      "h1s": [
+        "Notes on no-self-hreflang"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/no-self-hreflang"
+      ],
+      "hreflang": [
+        {
+          "lang": "en",
+          "raw_href": "http://127.0.0.1:8765/es",
+          "url": "http://127.0.0.1:8765/es",
+          "is_absolute": true
+        },
+        {
+          "lang": "es",
+          "raw_href": "http://127.0.0.1:8765/es",
+          "url": "http://127.0.0.1:8765/es",
+          "is_absolute": true
+        }
+      ],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on no-self-hreflang",
+        "og:description": "Reference notes for the no-self-hreflang page of the Northwind field archive.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/no-self-hreflang"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/noindex",
+      "final_url": "http://127.0.0.1:8765/noindex",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/noindex",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2768,
+      "elapsed_ms": 43.3,
+      "title": "Field notes on noindex page archive",
+      "meta_description": "Reference notes for the noindex page page of the Northwind field archive.",
+      "robots": "noindex, nofollow",
+      "h1s": [
+        "Hidden notes"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/noindex"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on noindex page archive",
+        "og:description": "Reference notes for the noindex page page of the Northwind field archive.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/noindex"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 322,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": false
+    },
+    {
+      "url": "http://127.0.0.1:8765/orphan",
+      "final_url": "http://127.0.0.1:8765/orphan",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/orphan",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2837,
+      "elapsed_ms": 45.4,
+      "title": "Field notes on orphan archive entry",
+      "meta_description": "Reference notes for the orphan page of the Northwind field archive. Seasonal context is included.",
+      "robots": null,
+      "h1s": [
+        "Notes on orphan"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/orphan"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on orphan archive entry",
+        "og:description": "Reference notes for the orphan page of the Northwind field archive. Seasonal context is included.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/orphan"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/thin",
+      "final_url": "http://127.0.0.1:8765/thin",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/thin",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 99,
+      "elapsed_ms": 2.4,
+      "title": null,
+      "meta_description": null,
+      "robots": null,
+      "h1s": [],
+      "h1_empty": 0,
+      "canonicals": [],
+      "hreflang": [],
+      "jsonld": [],
+      "og": {},
+      "images": [],
+      "word_count": 3,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/title-long",
+      "final_url": "http://127.0.0.1:8765/title-long",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/title-long",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2966,
+      "elapsed_ms": 2.7,
+      "title": "Seasonal archive of soil temperature rainfall yield and market prices from Northwind farms",
+      "meta_description": "Reference notes for the title-long page of the Northwind field archive.",
+      "robots": null,
+      "h1s": [
+        "Notes on title-long"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/title-long"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Seasonal archive of soil temperature rainfall yield and market prices from Northwind farms",
+        "og:description": "Reference notes for the title-long page of the Northwind field archive.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/title-long"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/x-robots",
+      "final_url": "http://127.0.0.1:8765/x-robots",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/x-robots",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 1,
+      "html_bytes": 2837,
+      "elapsed_ms": 42.3,
+      "title": "Field notes on x-robots archive",
+      "meta_description": "Reference notes for the x-robots page of the Northwind field archive. Seasonal context is included.",
+      "robots": "noindex",
+      "h1s": [
+        "Notes on x-robots"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/x-robots"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on x-robots archive",
+        "og:description": "Reference notes for the x-robots page of the Northwind field archive. Seasonal context is included.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/x-robots"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": false
+    },
+    {
+      "url": "http://127.0.0.1:8765/guides/start",
+      "final_url": "http://127.0.0.1:8765/guides/start",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/guides/start",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 2,
+      "html_bytes": 2850,
+      "elapsed_ms": 44.1,
+      "title": "Field notes on guides start archive",
+      "meta_description": "Reference notes for the guides start page of the Northwind field archive.",
+      "robots": null,
+      "h1s": [
+        "Notes on guides start"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/guides/start"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on guides start archive",
+        "og:description": "Reference notes for the guides start page of the Northwind field archive.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/guides/start"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 325,
+      "internal_links": [
+        "http://127.0.0.1:8765/guides/mid"
+      ],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/guides/mid",
+      "final_url": "http://127.0.0.1:8765/guides/mid",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/guides/mid",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 3,
+      "html_bytes": 2833,
+      "elapsed_ms": 43.3,
+      "title": "Field notes on guides mid archive",
+      "meta_description": "Reference notes for the guides mid page of the Northwind field archive.",
+      "robots": null,
+      "h1s": [
+        "Notes on guides mid"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/guides/mid"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on guides mid archive",
+        "og:description": "Reference notes for the guides mid page of the Northwind field archive.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/guides/mid"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 325,
+      "internal_links": [
+        "http://127.0.0.1:8765/guides/deep"
+      ],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/guides/deep",
+      "final_url": "http://127.0.0.1:8765/guides/deep",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/guides/deep",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": 4,
+      "html_bytes": 2804,
+      "elapsed_ms": 43.0,
+      "title": "Field notes on guides deep archive",
+      "meta_description": "Reference notes for the guides deep page of the Northwind field archive.",
+      "robots": null,
+      "h1s": [
+        "Notes on guides deep"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/guides/deep"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on guides deep archive",
+        "og:description": "Reference notes for the guides deep page of the Northwind field archive.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/guides/deep"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 324,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/bad-redirect",
+      "final_url": "http://127.0.0.1:8765/bad-redirect",
+      "status": 302,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/bad-redirect",
+          "status": 302
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": true,
+      "offsite_redirect": false,
+      "content_type": null,
+      "is_html": false,
+      "parsed": false,
+      "depth": null,
+      "html_bytes": 0,
+      "elapsed_ms": 1.6,
+      "title": null,
+      "meta_description": null,
+      "robots": null,
+      "h1s": [],
+      "h1_empty": 0,
+      "canonicals": [],
+      "hreflang": [],
+      "jsonld": [],
+      "og": {},
+      "images": [],
+      "word_count": 0,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": false
+    },
+    {
+      "url": "http://127.0.0.1:8765/chain/0",
+      "final_url": "http://127.0.0.1:8765/chain/10",
+      "status": 301,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/chain/0",
+          "status": 301
+        },
+        {
+          "url": "http://127.0.0.1:8765/chain/1",
+          "status": 301
+        },
+        {
+          "url": "http://127.0.0.1:8765/chain/2",
+          "status": 301
+        },
+        {
+          "url": "http://127.0.0.1:8765/chain/3",
+          "status": 301
+        },
+        {
+          "url": "http://127.0.0.1:8765/chain/4",
+          "status": 301
+        },
+        {
+          "url": "http://127.0.0.1:8765/chain/5",
+          "status": 301
+        },
+        {
+          "url": "http://127.0.0.1:8765/chain/6",
+          "status": 301
+        },
+        {
+          "url": "http://127.0.0.1:8765/chain/7",
+          "status": 301
+        },
+        {
+          "url": "http://127.0.0.1:8765/chain/8",
+          "status": 301
+        },
+        {
+          "url": "http://127.0.0.1:8765/chain/9",
+          "status": 301
+        },
+        {
+          "url": "http://127.0.0.1:8765/chain/10",
+          "status": 301
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": true,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": null,
+      "is_html": false,
+      "parsed": false,
+      "depth": null,
+      "html_bytes": 0,
+      "elapsed_ms": 17.6,
+      "title": null,
+      "meta_description": null,
+      "robots": null,
+      "h1s": [],
+      "h1_empty": 0,
+      "canonicals": [],
+      "hreflang": [],
+      "jsonld": [],
+      "og": {},
+      "images": [],
+      "word_count": 0,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": false
+    },
+    {
+      "url": "http://127.0.0.1:8765/de-missing",
+      "final_url": "http://127.0.0.1:8765/de-missing",
+      "status": 404,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/de-missing",
+          "status": 404
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/plain; charset=utf-8",
+      "is_html": false,
+      "parsed": false,
+      "depth": null,
+      "html_bytes": 7,
+      "elapsed_ms": 42.6,
+      "title": null,
+      "meta_description": null,
+      "robots": null,
+      "h1s": [],
+      "h1_empty": 0,
+      "canonicals": [],
+      "hreflang": [],
+      "jsonld": [],
+      "og": {},
+      "images": [],
+      "word_count": 0,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "alternate",
+      "indexable": false
+    },
+    {
+      "url": "http://127.0.0.1:8765/es",
+      "final_url": "http://127.0.0.1:8765/es",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/es",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": null,
+      "html_bytes": 2943,
+      "elapsed_ms": 45.0,
+      "title": "Field notes on es archive entry",
+      "meta_description": "Reference notes for the es page of the Northwind field archive. Seasonal context is included.",
+      "robots": null,
+      "h1s": [
+        "Notes on es"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/es"
+      ],
+      "hreflang": [
+        {
+          "lang": "es",
+          "raw_href": "http://127.0.0.1:8765/es",
+          "url": "http://127.0.0.1:8765/es",
+          "is_absolute": true
+        },
+        {
+          "lang": "en",
+          "raw_href": "http://127.0.0.1:8765/hreflang",
+          "url": "http://127.0.0.1:8765/hreflang",
+          "is_absolute": true
+        }
+      ],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on es archive entry",
+        "og:description": "Reference notes for the es page of the Northwind field archive. Seasonal context is included.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/es"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "alternate",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/fr",
+      "final_url": "http://127.0.0.1:8765/fr",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/fr",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": null,
+      "html_bytes": 2869,
+      "elapsed_ms": 41.5,
+      "title": "Field notes on fr archive entry",
+      "meta_description": "Reference notes for the fr page of the Northwind field archive. Seasonal context is included.",
+      "robots": null,
+      "h1s": [
+        "Notes on fr"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/fr"
+      ],
+      "hreflang": [
+        {
+          "lang": "fr",
+          "raw_href": "http://127.0.0.1:8765/fr",
+          "url": "http://127.0.0.1:8765/fr",
+          "is_absolute": true
+        }
+      ],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on fr archive entry",
+        "og:description": "Reference notes for the fr page of the Northwind field archive. Seasonal context is included.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/fr"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "alternate",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/limited",
+      "final_url": "http://127.0.0.1:8765/limited",
+      "status": 429,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/limited",
+          "status": 429
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/plain; charset=utf-8",
+      "is_html": false,
+      "parsed": false,
+      "depth": null,
+      "html_bytes": 9,
+      "elapsed_ms": 1.4,
+      "title": null,
+      "meta_description": null,
+      "robots": null,
+      "h1s": [],
+      "h1_empty": 0,
+      "canonicals": [],
+      "hreflang": [],
+      "jsonld": [],
+      "og": {},
+      "images": [],
+      "word_count": 0,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": false
+    },
+    {
+      "url": "http://127.0.0.1:8765/loop-a",
+      "final_url": "http://127.0.0.1:8765/loop-a",
+      "status": 301,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/loop-a",
+          "status": 301
+        },
+        {
+          "url": "http://127.0.0.1:8765/loop-b",
+          "status": 301
+        }
+      ],
+      "loop": true,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": null,
+      "is_html": false,
+      "parsed": false,
+      "depth": null,
+      "html_bytes": 0,
+      "elapsed_ms": 3.8,
+      "title": null,
+      "meta_description": null,
+      "robots": null,
+      "h1s": [],
+      "h1_empty": 0,
+      "canonicals": [],
+      "hreflang": [],
+      "jsonld": [],
+      "og": {},
+      "images": [],
+      "word_count": 0,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": false
+    },
+    {
+      "url": "http://127.0.0.1:8765/missing-page",
+      "final_url": "http://127.0.0.1:8765/missing-page",
+      "status": 404,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/missing-page",
+          "status": 404
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/plain; charset=utf-8",
+      "is_html": false,
+      "parsed": false,
+      "depth": null,
+      "html_bytes": 7,
+      "elapsed_ms": 48.4,
+      "title": null,
+      "meta_description": null,
+      "robots": null,
+      "h1s": [],
+      "h1_empty": 0,
+      "canonicals": [],
+      "hreflang": [],
+      "jsonld": [],
+      "og": {},
+      "images": [],
+      "word_count": 0,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": false
+    },
+    {
+      "url": "http://127.0.0.1:8765/redirect",
+      "final_url": "http://127.0.0.1:8765/about",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/redirect",
+          "status": 301
+        },
+        {
+          "url": "http://127.0.0.1:8765/about",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": null,
+      "html_bytes": 1267,
+      "elapsed_ms": 50.8,
+      "title": "Field notes on about archive entry",
+      "meta_description": "Reference notes for the about page of the Northwind field archive. Seasonal context is included.",
+      "robots": null,
+      "h1s": [
+        "Notes on about"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/about"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on about archive entry",
+        "og:description": "Reference notes for the about page of the Northwind field archive. Seasonal context is included.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/about"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 63,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/redirect-chain",
+      "final_url": "http://127.0.0.1:8765/about",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/redirect-chain",
+          "status": 301
+        },
+        {
+          "url": "http://127.0.0.1:8765/mid",
+          "status": 302
+        },
+        {
+          "url": "http://127.0.0.1:8765/about",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": null,
+      "html_bytes": 1267,
+      "elapsed_ms": 52.2,
+      "title": "Field notes on about archive entry",
+      "meta_description": "Reference notes for the about page of the Northwind field archive. Seasonal context is included.",
+      "robots": null,
+      "h1s": [
+        "Notes on about"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/about"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on about archive entry",
+        "og:description": "Reference notes for the about page of the Northwind field archive. Seasonal context is included.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/about"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 63,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/redirect-long",
+      "final_url": "http://127.0.0.1:8765/about",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/redirect-long",
+          "status": 301
+        },
+        {
+          "url": "http://127.0.0.1:8765/long/1",
+          "status": 302
+        },
+        {
+          "url": "http://127.0.0.1:8765/long/2",
+          "status": 302
+        },
+        {
+          "url": "http://127.0.0.1:8765/about",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": null,
+      "html_bytes": 1267,
+      "elapsed_ms": 54.6,
+      "title": "Field notes on about archive entry",
+      "meta_description": "Reference notes for the about page of the Northwind field archive. Seasonal context is included.",
+      "robots": null,
+      "h1s": [
+        "Notes on about"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/about"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on about archive entry",
+        "og:description": "Reference notes for the about page of the Northwind field archive. Seasonal context is included.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/about"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 63,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": true
+    },
+    {
+      "url": "http://127.0.0.1:8765/redirect-out",
+      "final_url": "http://127.0.0.1:8766/ok",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/redirect-out",
+          "status": 302
+        },
+        {
+          "url": "http://127.0.0.1:8766/ok",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": true,
+      "content_type": "text/plain; charset=utf-8",
+      "is_html": false,
+      "parsed": false,
+      "depth": null,
+      "html_bytes": 2,
+      "elapsed_ms": 4.1,
+      "title": null,
+      "meta_description": null,
+      "robots": null,
+      "h1s": [],
+      "h1_empty": 0,
+      "canonicals": [],
+      "hreflang": [],
+      "jsonld": [],
+      "og": {},
+      "images": [],
+      "word_count": 0,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": false
+    },
+    {
+      "url": "http://127.0.0.1:8765/server-error",
+      "final_url": "http://127.0.0.1:8765/server-error",
+      "status": 500,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/server-error",
+          "status": 500
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/plain; charset=utf-8",
+      "is_html": false,
+      "parsed": false,
+      "depth": null,
+      "html_bytes": 5,
+      "elapsed_ms": 45.3,
+      "title": null,
+      "meta_description": null,
+      "robots": null,
+      "h1s": [],
+      "h1_empty": 0,
+      "canonicals": [],
+      "hreflang": [],
+      "jsonld": [],
+      "og": {},
+      "images": [],
+      "word_count": 0,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "link",
+      "indexable": false
+    },
+    {
+      "url": "http://127.0.0.1:8765/sitemap-only",
+      "final_url": "http://127.0.0.1:8765/sitemap-only",
+      "status": 200,
+      "error": null,
+      "hops": [
+        {
+          "url": "http://127.0.0.1:8765/sitemap-only",
+          "status": 200
+        }
+      ],
+      "loop": false,
+      "too_many_redirects": false,
+      "missing_location": false,
+      "offsite_redirect": false,
+      "content_type": "text/html; charset=utf-8",
+      "is_html": true,
+      "parsed": true,
+      "depth": null,
+      "html_bytes": 2813,
+      "elapsed_ms": 43.3,
+      "title": "Field notes on sitemap-only archive",
+      "meta_description": "Reference notes for the sitemap-only page of the Northwind field archive.",
+      "robots": null,
+      "h1s": [
+        "Notes on sitemap-only"
+      ],
+      "h1_empty": 0,
+      "canonicals": [
+        "http://127.0.0.1:8765/sitemap-only"
+      ],
+      "hreflang": [],
+      "jsonld": [
+        {
+          "valid": true,
+          "error": null,
+          "types": [
+            "WebPage"
+          ],
+          "empty": false
+        }
+      ],
+      "og": {
+        "og:title": "Field notes on sitemap-only archive",
+        "og:description": "Reference notes for the sitemap-only page of the Northwind field archive.",
+        "og:image": "http://127.0.0.1:8765/og.png",
+        "og:url": "http://127.0.0.1:8765/sitemap-only"
+      },
+      "images": [
+        {
+          "src": "http://127.0.0.1:8765/notebook.png",
+          "alt": "Field notebook"
+        }
+      ],
+      "word_count": 323,
+      "internal_links": [],
+      "external_links": [],
+      "truncated": false,
+      "source": "sitemap",
+      "indexable": true
+    }
+  ],
+  "external_checks": [
+    {
+      "url": "http://127.0.0.1:8766/ok",
+      "status": 200,
+      "error": null,
+      "final_url": "http://127.0.0.1:8766/ok"
+    },
+    {
+      "url": "http://127.0.0.1:8766/missing",
+      "status": 404,
+      "error": null,
+      "final_url": "http://127.0.0.1:8766/missing"
+    }
+  ],
+  "external_considered": 2,
+  "blocked_urls": [
+    "http://127.0.0.1:8765/private/secret"
+  ],
+  "requests_made": 61
+}

@@ -1,0 +1,2 @@
+url,final_url,status,depth,indexable,title,meta_description,h1,canonical,word_count,html_bytes,source,elapsed_ms,error
+http://127.0.0.1:8767/,http://127.0.0.1:8767/,200,0,yes,Field notes on home archive entry,Reference notes for the home page of the Northwind field archive. Seasonal context is included.,Notes on home,http://127.0.0.1:8767/,323,2807,start,43.9,

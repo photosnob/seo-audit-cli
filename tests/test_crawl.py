@@ -1,5 +1,8 @@
 import asyncio
 
+from seoaudit.crawler import RateLimiter, run_audit
+from seoaudit.models import AuditConfig
+from seoaudit.report import write_report
 from tests.fixture_site import (
     FixtureServer,
     build_bad_sitemap_app,
@@ -9,10 +12,6 @@ from tests.fixture_site import (
     build_robots_down_app,
     build_slow_app,
 )
-
-from seoaudit.crawler import RateLimiter, run_audit
-from seoaudit.models import AuditConfig
-from seoaudit.report import write_report
 
 
 def _audit(origin: str, **overrides: object) -> object:

@@ -1,8 +1,7 @@
-from tests.helpers import codes, make_page
-
 from seoaudit.checks import collect_issues
 from seoaudit.models import ExternalCheck, Hop, HreflangRef, Issue, JsonLdBlock
 from seoaudit.thresholds import Thresholds
+from tests.helpers import codes, make_page
 
 
 def _issues(pages: list, **kwargs: object) -> list[Issue]:

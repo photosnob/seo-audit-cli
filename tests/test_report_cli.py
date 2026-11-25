@@ -1,10 +1,9 @@
-from tests.fixture_site import FixtureServer, build_clean_app, build_demo_app, build_external_app
-from tests.helpers import bare_report, make_page
-
 from seoaudit.cli import main
 from seoaudit.html_report import render_html
 from seoaudit.models import Issue
 from seoaudit.report import render_json, write_report
+from tests.fixture_site import FixtureServer, build_clean_app, build_demo_app, build_external_app
+from tests.helpers import bare_report, make_page
 
 
 def test_html_escapes_untrusted_text(tmp_path) -> None:  # type: ignore[no-untyped-def]

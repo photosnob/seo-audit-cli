@@ -67,6 +67,9 @@ known-first-party = ["seoaudit"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+# The pytest console script does not put the repository root on sys.path.
+# Tests import the fixture package as `tests`.
+pythonpath = ["."]
 
 [tool.mypy]
 python_version = "3.11"
